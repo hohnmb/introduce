@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"c:\\\\Users\\\\Codelab\\\\Desktop\\\\깃허브 소개페이지\" remote get-url origin)",
+      "Bash(git -C \"c:\\\\Users\\\\Codelab\\\\Desktop\\\\깃허브 소개페이지\" config --get remote.origin.url)",
+      "Bash(not exist *)",
+      "Bash(mkdir -p \"c:/Users/Codelab/Desktop/깃허브 소개페이지/.github/workflows\")",
+      "Bash(git -C \"c:/Users/Codelab/Desktop/깃허브 소개페이지\" status)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Codelab\\Desktop\\깃허브 소개페이지\\.github"
+    ]
+  }
+}

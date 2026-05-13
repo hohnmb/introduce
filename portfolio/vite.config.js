@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 // username.github.io 형태 저장소라면 '/' 로 두면 됩니다.
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/introduce/',
 })
