@@ -85,6 +85,7 @@ export const projects = [
       result:
         "화상 회의 중에도 인식 결과가 끊김 없이 표시되는 안정적인 실시간 수어 인식 구현.",
     },
+    github: "https://github.com/hohnmb/ssafy-secondpjt",
     featured: true,
   },
   {
@@ -110,6 +111,7 @@ export const projects = [
       result:
         "신규 기능 추가 시 변경 범위가 슬라이스 내부로 한정되어 사이드 이펙트가 줄고, 팀원 간 코드 리뷰 효율이 향상됨.",
     },
+    github: "https://github.com/hohnmb/ssafy-finalpjt",
     featured: true,
   },
   {
@@ -120,6 +122,7 @@ export const projects = [
     role: "프론트엔드 · 팀 7명",
     summary:
       "WebRTC 음성 채팅과 Phaser3 게임 엔진을 결합한 실시간 멀티플레이어 마피아 게임. throttling과 보간(interpolation)으로 네트워크 부하를 줄이고 캐릭터 움직임의 끊김을 해소했습니다.",
+    github: "https://github.com/hohnmb/ssafy-first_pjt",
     stack: ["React", "JavaScript", "Phaser3", "WebSocket", "WebRTC"],
     contributions: [
       "Phaser3 기반 게임 맵, 캐릭터 스프라이트, 충돌 감지 로직 구현",
