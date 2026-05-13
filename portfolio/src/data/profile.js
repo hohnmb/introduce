@@ -44,6 +44,9 @@ export const skills = [
       { name: "Figma", level: "Basic" },
       { name: "Notion", level: "Intermediate" },
       { name: "Vite", level: "Intermediate" },
+      { name: "Axios", level: "Intermediate" },
+      { name: "Postman", level: "Intermediate" },
+      { name: "Phaser3", level: "Basic" },
     ],
   },
 ];
@@ -72,6 +75,7 @@ export const projects = [
       "WebSocket(StompJS)을 활용한 실시간 채팅 데이터 동기화",
       "Mediapipe 기반 수어 인식 AI 모델을 JavaScript 환경으로 포팅·연동",
       "Whisper STT 결과와 수어 인식 결과를 통합하여 UI에 실시간 반영",
+      "Zustand를 활용한 전역 상태 관리 및 실시간 인식 결과 동기화",
     ],
     trouble: {
       problem:
@@ -162,6 +166,12 @@ export const timeline = [
     title: "데이홈",
     place: "물류 주임/계장",
     desc: "제품 검수 및 품질 관리, 입출고 관리, 현장 운영 전반 담당. 반복 업무 환경에서 오류를 최소화하기 위한 체크리스트와 검수 절차 개선.",
+  },
+  {
+    year: "2018.02 – 2019.10",
+    title: "육군 병장 제대",
+    place: "군 복무",
+    desc: "병역 의무 이행 후 만기 전역.",
   },
   {
     year: "2016.03 – 2018.02",
