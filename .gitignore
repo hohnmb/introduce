@@ -1,0 +1,18 @@
+# 환경변수 (API 키 등 절대 올리지 말 것)
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+
+# 기타
+.DS_Store
+*.log

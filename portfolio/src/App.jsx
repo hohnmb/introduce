@@ -6,6 +6,7 @@ import Projects from './sections/Projects'
 import Demo from './sections/Demo'
 import Writings from './sections/Writings'
 import Contact from './sections/Contact'
+import ChatButton from './components/ChatButton'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Writings />
         <Contact />
       </main>
+      <ChatButton />
     </div>
   )
 }
