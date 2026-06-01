@@ -10,7 +10,7 @@ export default function Writings() {
           index="05"
           label="Writings"
           title={<>기록하면서<br /><span className="italic">배웁니다.</span></>}
-          sub="프로젝트에서 부딪힌 문제와 풀어 가는 과정을 글로 남기는 중입니다. 곧 정리해서 공개할 예정입니다."
+          sub="프로젝트별 트러블슈팅과 회고를 정리했습니다. 추후 블로그 포스팅으로 이어질 예정입니다."
         />
 
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
@@ -23,9 +23,8 @@ export default function Writings() {
               transition={{ duration: 0.7, delay: i * 0.1 }}
               className="border border-line bg-paper p-6 md:p-8 flex flex-col gap-4 group hover:border-ink transition-colors"
             >
-              <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
+              <div className="flex items-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
                 <span>{w.date}</span>
-                <span className="px-2 py-1 border border-line rounded-full">{w.status}</span>
               </div>
               <h3 className="font-display text-2xl tracking-tight leading-snug group-hover:text-accent transition-colors">
                 {w.title}
