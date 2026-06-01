@@ -97,32 +97,41 @@ export default function ProjectCard({ project, index }) {
                 )}
               </div>
 
-              {project.trouble && (
+              {project.troubles && project.troubles.length > 0 && (
                 <div className="md:col-span-5">
                   <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted mb-4">
                     ⟶ Troubleshooting
                   </div>
-                  <div className="space-y-5 border border-line p-6 md:p-8 bg-paper">
-                    <div>
-                      <div className="font-mono text-[10px] uppercase tracking-wider text-accent mb-1">
-                        Problem
+                  <div className="space-y-6">
+                    {project.troubles.map((t, i) => (
+                      <div key={i} className="space-y-5 border border-line p-6 md:p-8 bg-paper">
+                        {project.troubles.length > 1 && (
+                          <div className="font-mono text-[10px] uppercase tracking-wider text-muted mb-2">
+                            Case {String(i + 1).padStart(2, '0')}
+                          </div>
+                        )}
+                        <div>
+                          <div className="font-mono text-[10px] uppercase tracking-wider text-accent mb-1">
+                            Problem
+                          </div>
+                          <p className="text-sm leading-relaxed">{t.problem}</p>
+                        </div>
+                        <div className="h-px bg-line" />
+                        <div>
+                          <div className="font-mono text-[10px] uppercase tracking-wider text-accent mb-1">
+                            Approach
+                          </div>
+                          <p className="text-sm leading-relaxed">{t.approach}</p>
+                        </div>
+                        <div className="h-px bg-line" />
+                        <div>
+                          <div className="font-mono text-[10px] uppercase tracking-wider text-accent mb-1">
+                            Result
+                          </div>
+                          <p className="text-sm leading-relaxed">{t.result}</p>
+                        </div>
                       </div>
-                      <p className="text-sm leading-relaxed">{project.trouble.problem}</p>
-                    </div>
-                    <div className="h-px bg-line" />
-                    <div>
-                      <div className="font-mono text-[10px] uppercase tracking-wider text-accent mb-1">
-                        Approach
-                      </div>
-                      <p className="text-sm leading-relaxed">{project.trouble.approach}</p>
-                    </div>
-                    <div className="h-px bg-line" />
-                    <div>
-                      <div className="font-mono text-[10px] uppercase tracking-wider text-accent mb-1">
-                        Result
-                      </div>
-                      <p className="text-sm leading-relaxed">{project.trouble.result}</p>
-                    </div>
+                    ))}
                   </div>
                 </div>
               )}

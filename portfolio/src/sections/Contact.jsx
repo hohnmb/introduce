@@ -69,7 +69,7 @@ export default function Contact() {
         <div className="mt-24 pt-8 border-t border-paper/10 flex flex-col md:flex-row justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.25em] text-paper/40">
           <div>© 2026 Lee Seongwook</div>
           <div>Built with React · Vite · Tailwind · Framer Motion</div>
-          <div>Last updated 2026.05</div>
+          <div>Last updated 2026.06</div>
         </div>
       </div>
     </section>

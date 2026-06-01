@@ -4,7 +4,7 @@ import { profile } from '../data/profile'
 const marqueeWords = [
   'React', '·', 'TypeScript', '·', 'WebSocket', '·', 'OpenVidu',
   '·', 'Zustand', '·', 'TailwindCSS', '·', 'Real-time UI', '·',
-  'WebRTC', '·', 'TensorFlow.js', '·',
+  'WebRTC', '·', 'Mediapipe', '·',
 ]
 
 export default function Hero() {
@@ -56,7 +56,7 @@ export default function Hero() {
 
             <div className="pb-3 md:pb-8 font-mono text-[10px] md:text-xs uppercase tracking-[0.25em] text-muted max-w-xs">
               <div className="h-px w-12 bg-ink mb-3" />
-              <div>2026 ─ Lee Seongwook</div>
+              <div>2026 ─ {profile.nameEn}</div>
               <div className="mt-1">Seoul, South Korea</div>
             </div>
           </motion.div>
