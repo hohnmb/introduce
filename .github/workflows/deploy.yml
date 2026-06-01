@@ -36,6 +36,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_CHAT_API_URL: https://portfolio-chatbot-760040490823.asia-northeast3.run.app
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
