@@ -33,7 +33,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 배포 시 포트폴리오 도메인으로 변경
+    allow_origins=["https://hohnmb.github.io"],  # 배포 시 포트폴리오 도메인으로 변경
     allow_methods=["POST", "OPTIONS"],
     allow_headers=["*"],
 )
